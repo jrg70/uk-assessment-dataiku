@@ -1,0 +1,28 @@
+# ===== GENERAL SETTINGS =====
+random_seed: 42
+
+# ===== DATA PATHS =====
+paths:
+  raw: data/raw                # where original data lives
+  interim: data/interim        # where cleaned data is saved
+  processed: data/processed    # where transformed data is saved
+  models: models               # where trained models are stored
+  results: results             # where metrics / predictions are saved
+
+# ===== DATA SETTINGS =====
+target: target_column_name     # change this for each project
+features:
+  numeric: []                  # add numeric feature names here later
+  categorical: []              # add categorical feature names here later
+
+# ===== MODELING SETTINGS =====
+modeling:
+  cv_folds: 5
+  scoring: roc_auc
+  models:
+    logreg:
+      C: [0.1, 1.0, 10.0]
+      max_iter: 200
+    random_forest:
+      n_estimators: [100, 200]
+      max_depth: [None, 10, 20]
