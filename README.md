@@ -1,7 +1,7 @@
-# Project Title: ABCD
+# Project Title: UK Dataiku Data Scientist Technical Assessment
 
 ## Overview
-(Please provide an overview of the project here.)
+The goal is to develop a predictive model that classifies individuals into income brackets (<=50K or >50K) based on demographic and employment attributes extracted from the U.S. Census Bureau database.
 
 ---
 
