@@ -3,17 +3,16 @@ random_seed: 42
 
 # ===== DATA PATHS =====
 paths:
-  raw: data/raw                # where original data lives
-  interim: data/interim        # where cleaned data is saved
-  processed: data/processed    # where transformed data is saved
-  models: models               # where trained models are stored
-  results: results             # where metrics / predictions are saved
+  raw: data/raw
+  processed: data/processed
+  models: models
+  results: results
 
 # ===== DATA SETTINGS =====
-target: target_column_name     # change this for each project
+target: income
 features:
-  numeric: []                  # add numeric feature names here later
-  categorical: []              # add categorical feature names here later
+  numeric: [age, wage_per_hour, capital_gains, capital_losses, dividends_from_stocks, num_persons_worked_for_employer, weeks_worked_in_year]
+  categorical: [class_of_worker, industry_code, occupation_code, education, marital_status, race, sex, hispanic_origin, member_of_labor_union, reason_for_unemployment, full_or_part_time_employment_status, tax_filer_status, region_of_previous_residence, state_of_previous_residence, migration_code_change_in_msa, migration_code_change_in_reg, migration_code_move_within_reg, live_in_this_house_1_year_ago, migration_prev_res_in_sunbelt, family_members_under_18, country_of_birth_father, country_of_birth_mother, country_of_birth_self, citizenship, own_business_or_self_employed, fill_inc_questionnaire_for_veterans_admin, veterans_benefits]
 
 # ===== MODELING SETTINGS =====
 modeling:
