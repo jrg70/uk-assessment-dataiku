@@ -37,15 +37,7 @@ project-name/
 ---
 
 ## Usage
-
-### Train a model
-`python src/train.py`  
-
-### Evaluate on test set
-`python src/evaluate.py`  
-
-### Run tests
-`pytest tests/`  
+`python -m src.run`
 
 ---
 
